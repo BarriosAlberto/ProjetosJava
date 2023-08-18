@@ -1,0 +1,33 @@
+//1.TODO PROGRAMA JAVA É UMA Classe
+ //.public class XXXX{
+ //  ......
+//}
+
+//2.Você deve gravar o programa como XXX.java
+
+//3.O seu programa java conterá:
+//    variaveis (ATRIBUTOS)
+//    funcoes   (MÉTODOS)
+public class Pilha
+  {
+    //Atributos= "Variaveis da classe"
+    int dados[];= new dados[10];  //Conteúdo da pilha
+    int topo;                      //posição do ultimo elemento da pilha
+    int capacidade;               //Quantos elementos a pilha pode ter
+   
+    //Métodos= "Operações que podemos fazer com classe"
+    void empilha (int valor) {
+        topo++;
+        dados [topo] = valor;
+}
+int desempilha () {
+   topo--;
+   return dados[topo + 1];
+    }
+   
+    void imprime (){
+        for (int i=0; i<=topo; i++){
+            System.out.println (dados[i]);
+        }
+    }
+  }
