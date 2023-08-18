@@ -1,0 +1,50 @@
+  public class TADPilha {
+     
+  // Atributos= variaveis da classe
+         int topo;
+         int capacidade;
+         int []dados;
+         
+  // Construtor
+     public TADPilha (int tamanho) {
+            topo = -1;
+            capacidade = tamanho;
+            dados = new int(capacidade);
+     }
+     
+  // Metodos= funções = operações sobre os Atributos
+     public void imprime () {
+        for (int i=0;i<=topo;i++)
+          System.out.println(dados[i]);
+     }
+     public void empilha (int valor) {
+          topo++;
+          dados[topo] = valor;
+         
+     }
+     public int desempilha () {
+         topo--;
+         return dados[topo + 1];
+
+
+
+----------------------------------------------------
+
+
+Main 
+
+
+public class Main
+{
+public static void main(String[] args) {
+
+  TADPilha p = new TADPilha (10);
+  TADPilha q = new TADPilha (10);
+ 
+  p.empilha (10);
+  q.empilha (0);
+  p.empilha (20);
+ 
+  p.imprime ();
+}
+}
